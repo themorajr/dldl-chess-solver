@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Land: New World Puzzle Solver</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Soul Land: New World Puzzle Solver</h1>
+    <div class="controls-container">
+        <div class="controls">
+            <div class="row">
+                <button onclick="setupGrid(3, 3)">3x3 Grid</button>
+                <button onclick="setupGrid(3, 4)">3x4 Grid</button>
+                <button onclick="setupSpecialGrid()">3x5 Grid with X</button>
+            </div></br>
+            <button onclick="calculateSolution()"> CALCULATE </button>
+        </div>
+    </div>
+    <div id="grid-container" class="grid"></div>
+    <div id="solution"></div>
+
+    <div class="popup-content">
+        <h2>How to Use</h2>
+        <ul>
+            <li>Select a grid: <b>3x3</b>, <b>3x4</b>, or <b>5x3</b> with empty spaces for no poles.</li>
+            <li>Click on the empty spaces until they turn <b>black</b> to mark them as poles.</li>
+            <li><b>Red</b> indicates lights that are turned on.</li>
+            <li>Any orientation is fine, but placing it facing the grid front makes it easier to view.</li>
+        </ul>
+        <h3>How to Solve</h3>
+        <p>
+            Check the steps below. 
+            The first number refers to the <b>row</b>, and the second number to the <b>column</b>.
+            For example, <b>(1,2)</b> means row 1, column 2.
+        </p>
+        <p>Enjoy!</p>
+    </div>
+    
+
+    <footer>
+        <a href="https://github.com/themorajr/dldl-chess-solver">Open Source Apache 2.0</a><br>
+        Created By "โมรา" Sv.27
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
